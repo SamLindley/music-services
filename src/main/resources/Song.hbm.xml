@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.psandchill.models.Song" table="song">
+        <id name="id" type="int">
+            <column name="ID"/>
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="string">
+            <column name="NAME"/>
+        </property>
+        <property name="artist" type="string">
+            <column name="ARTIST"/>
+        </property>
+        <property name="album" type="string">
+            <column name="ALBUM"/>
+        </property>
+        <property name="year" type="int">
+            <column name="YEAR"/>
+        </property>
+    </class>
+</hibernate-mapping>
